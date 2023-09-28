@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 import io from "socket.io-client"
 import './styles/TicTacToe.css'
 
- const socket = io("http://localhost:5000")
-/* const socket = io("https://tictactoe-s.herokuapp.com/") */
+/*  const socket = io("http://localhost:5000") */
+const socket = io("https://task7-server-dhs0.onrender.com/")
 
 const TicTacToe = () => {
     const [player, setPlayer] = useState();
